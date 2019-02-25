@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="cssnyaboi.css">
+	
+</head>
+<body>
+	<div class="kalkulator">
+		<input type="text" disabled id="output" value="0">
+
+		<div class="buttonkalkulator">
+			<button class="buttonkal clear" onclick="clr()">Clear</button>
+			<button class="buttonkal" onclick="btn_opr(2)">/</button>
+
+
+			<button class="buttonkal" onclick="btn('7')">7</button>
+			<button class="buttonkal" onclick="btn('8')">8</button>
+			<button class="buttonkal" onclick="btn('9')">9</button>
+			<button class="buttonkal" onclick="btn_opr(1)">x</button>
+
+			<button class="buttonkal" onclick="btn('4')">4</button>
+			<button class="buttonkal" onclick="btn('5')">5</button>
+			<button class="buttonkal" onclick="btn('6')">6</button>
+			<button class="buttonkal" onclick="btn_opr(3)">-</button>
+
+			<button class="buttonkal" onclick="btn('1')">1</button>
+			<button class="buttonkal" onclick="btn('2')">2</button>
+			<button class="buttonkal" onclick="btn('3')">3</button>
+			<button class="buttonkal" onclick="btn_opr(4)">+</button>
+
+			<button class="buttonkal nol" onclick="btn('0')">0</button>
+			<button class="buttonkal" onclick="hitung()">=</button>
+		</div>	
+	</div>
+	<script type="text/javascript" src="dokumen.js"></script>
+</body>
+</html>

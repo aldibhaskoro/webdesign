@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	.button {
+	  background-color: lightblue; 
+	  border: black;
+	  color: black;
+	  padding: 15px 80px;
+	  cursor: pointer;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	}
+	.test:hover {
+	  border: 3px solid black;
+ 
+	</style>
+
+	<script type="text/javascript">
+	function inputangka() {
+		var x = prompt(" Masukkan Angka : ");
+
+
+			if (x % 2 == 0) {
+				alert (x + " = Angka Genap Ini Mahhhh...");	
+				document.getElementById('output').style.color = "red";
+				document.getElementById('output').innerHTML = x + " Genap";
+				
+			}
+			else if (x % 2 != 0) {
+				alert (x + " = Angka Ganjil Cuy ");
+				document.getElementById('output').style.color = "blue";
+				document.getElementById('output').innerHTML = x + " Ganjil";
+			}
+			
+		
+	}
+</script>
+</head>
+
+<body>
+
+<h1>Program Menentukan Ganjil-Genap Sebuah Angka</h1>
+
+<hr>
+<p id="Riwayat"><b>Riwayat Input Angka-Hasil :</b></p>
+<p id=output></p>
+
+<button class="button test" onclick="inputangka()">Masukkan Angka Baru</button>
+<button class="button test" onclick="('Hapus')">Hapus</button>
+<p>Mentok saya ko, cuma bisa nampilin 1 inputan, ganjil genapnya udah bisa sih.</p>
+
+</body>
+</html>
